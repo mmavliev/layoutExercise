@@ -1,4 +1,4 @@
-let elements = $(".form-value").toArray();
+let elements = $(".form .form-value").toArray();
 $.map(elements, function(el) {
     let rowWidth = $(el).parent("div").width();
     let elWidth = $(el).parent("div").find(".form-field").width();
@@ -18,3 +18,4 @@ $(".javascript").click(function(event) {
     $(".polz").css("margin-left", x);
 
 })
+$(".date").css("padding-bottom", $(document).height() - $(".date").offset().top - $(".date").height() - 150)

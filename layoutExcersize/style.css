@@ -4,16 +4,43 @@ body {
     font-weight: 600;
 }
 
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 16px;
+}
+
 @media(max-width: 780px) {
     body {
         font-size: 19px;
     }
 }
 
+.java-2 {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .javascript {
+        display: none;
+    }
+    .java-2 {
+        display: block;
+    }
+}
+
 .container {
     background-image: url("assets/paper.jpg");
-    height: 100vh;
     padding: 0 7%;
+    padding-bottom: 100px;
+}
+
+.javascript {
+    padding-bottom: 50px;
 }
 
 .logo {
@@ -25,9 +52,8 @@ body {
 
 /* form start */
 
-.form,
-.javascript {
-    padding: 50px 0;
+.mt {
+    padding-top: 50px;
 }
 
 .form-value {
